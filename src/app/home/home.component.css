@@ -1,0 +1,10 @@
+.menu-home {
+    font-size: 20px;
+    color: #CCCECD;
+    padding-right: 20px;
+    border-right: 1px solid #CCCECD;
+    text-decoration: none;
+}
+.menu-home:hover {
+    color: white;
+}

@@ -1,0 +1,14 @@
+.card {
+    min-height: 150px;
+    width: 400px;
+    box-shadow: 3px 3px 5px #f8b660;
+    margin: 27px 30px 20px 90px;
+    background: #0b3c5d;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.card-book-title {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #fca533;
+}

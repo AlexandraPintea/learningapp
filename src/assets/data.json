@@ -1,0 +1,10 @@
+{
+    "id1" : {
+      "description" : "very nice book",
+      "name" : "Manualul"
+    },
+    "id2" : {
+      "description" : "even nicer book",
+      "name" : "Republica"
+    }
+  }

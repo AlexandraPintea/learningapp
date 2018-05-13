@@ -1,0 +1,21 @@
+/books
+  id1:
+    name: ...
+    description: ...
+    author: ...
+
+/quotes
+  qid1:
+    bookid: (sa fie id-ul de la book-ul coresp. din /books)
+    content:
+
+
+Scos for din card
+Creat un nou comp card-list - div cu for si in int are <app-card>
+~ cu books, dar in loc de /books o sa ai /quotes
+
+TODO:
+rehearse
+
+String interpolation,
+Property binding

@@ -1,0 +1,13 @@
+.main-menu {
+    width: 100%;
+    height: 85px;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    background: #1d2731;
+}
+app-list {
+    float: left;
+}
+app-card {
+    display: inline-block;
+}
