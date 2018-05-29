@@ -1,0 +1,3 @@
+<div class="list-of-cards"  *ngFor='let quote of quotesFromFirebase | async'>
+  <app-card [quoteInput]='quote.payload.val()'></app-card> 
+</div>

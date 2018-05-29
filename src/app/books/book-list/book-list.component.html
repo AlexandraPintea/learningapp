@@ -1,0 +1,6 @@
+<ul class="books-list">
+  <li class="book-name" [title]="book.key" *ngFor='let book of booksFromFirebase | async' (click)='onBookSelected(book.key)'>
+    <span>{{book.payload.val().name}}</span>
+  </li>
+</ul>
+

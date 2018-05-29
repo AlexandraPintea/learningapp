@@ -1,0 +1,23 @@
+.add-quote-form {
+    padding: 10px 30px 10px 20px;
+    margin-top: 15px;
+    background: rgb(214, 187, 83);
+    border: 1px solid #d98310;
+    max-width: 600px;
+}
+.add-quote-row {
+    margin-bottom: 15px;
+}
+.add-quote-button {
+    margin-left: 24%;
+    width: 180px;
+    border: none;
+    padding: 4px;
+    text-transform: capitalize;
+    color: #1d2731;
+    font-size: 14px;
+    background: #FD9E22;
+}
+.add-quote-form input {
+    border: 1px solid #d98310;
+}
