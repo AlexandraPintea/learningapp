@@ -5,8 +5,14 @@
     box-sizing: border-box;
     background: #1d2731;
 }
+.books-container {
+    padding-left: 0;
+}
+.books-container app-add-book {
+    text-align: center;
+}
 app-list {
-    float: left;
+    display: inline-block;
 }
 app-card {
     display: inline-block;

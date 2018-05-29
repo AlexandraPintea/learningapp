@@ -19,3 +19,14 @@ rehearse
 
 String interpolation,
 Property binding
+
+///////
+conceptul de clasa din OOP
+master detail 
+
+sa fac niste inputuri ca sa adaug un quote direct din aplicatie
+cand adaug quote sa adaug si id-ul cartii - un id ales de user - 
+
+sa separ portiunea care adauga o noua carte din book list - mutata intr-o noua componenta
+
+/in loc de home (meniu) sa fie un dahsboard si pe pagina resp afisam in fiecare zi un random quote

@@ -9,5 +9,7 @@ import { Input } from "@angular/core";
 export class AppComponent {
   title = 'app';
   name: string = '';
-  date:string;
+  date: string;
+
+
 }

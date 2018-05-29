@@ -1,14 +1,16 @@
-  <div class="main-menu">
-    <app-home></app-home>
+  <div class="container-fluid">
+    <div class="main-menu row">
+        <a href="#" class="menu-home">Home</a>
+        <a href="#" class="menu-books">Books</a>
+    </div>
     <app-books></app-books>
-  </div>
-  <input type="text" [(ngModel)]="name"/>
+  <app-random-quote></app-random-quote>
+</div>
+
+  <!-- <app-date></app-date> -->
+  <!-- <input type="text" [(ngModel)]="name"/>
   <span>{{name}}</span>
-  <app-list></app-list>
-  <app-date></app-date>
   <label for="date-input">Add your favorite quote</label>
   <input type="text" name="date-input" [(ngModel)]="date"/>
-  <div>{{date}}</div>
-  <app-card [carddate]='date'></app-card>
-<!-- 
-'date' variabila pe care o iau din componenta curenta -->
+  <div>{{date}}</div> -->
+  <!-- 'date' variabila pe care o iau din componenta curenta -->

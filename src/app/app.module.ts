@@ -10,8 +10,12 @@ import { CardComponent } from './card/card.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { BooksComponent } from './books/books.component';
-import { ListComponent } from './list/list.component';
+import { BookListComponent } from './books/book-list/book-list.component';
 import { DateComponent } from './date/date.component';
+import { CardListComponent } from './books/card-list/card-list.component';
+import { AddBookComponent } from './books/add-book/add-book.component';
+import { AddQuoteComponent } from './add-quote/add-quote.component';
+import { RandomQuoteComponent } from './random-quote/random-quote.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +23,12 @@ import { DateComponent } from './date/date.component';
     CardComponent,
     HomeComponent,
     BooksComponent,
-    ListComponent,
-    DateComponent
+    BookListComponent,
+    DateComponent,
+    CardListComponent,
+    AddBookComponent,
+    AddQuoteComponent,
+    RandomQuoteComponent
   ],
   imports: [
     BrowserModule,

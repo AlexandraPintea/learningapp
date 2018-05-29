@@ -1,8 +1,7 @@
-<div class="card" *ngFor='let card of cards' >
-   <p class="card-book-title">{{card.bookTitle}}</p>
-   <p class="card-author">by: {{card.authorName}}</p> 
-   <span class="card-quote">{{card.quoteContent}}</span>
-   <input type="text" [ngModel]="carddate"/>   
-   <span >{{carddate}}</span>
+<div class="card">
+   <p class="card-quote">{{quoteInput.content}}</p> 
+   <span>{{quoteInput.bookid}}</span> 
+   <!-- <input type="text" name="carddate-input" class="carddate-input" [(ngModel)]="carddate"/>   
+   <span>{{carddate}}</span>  String interpolation -->
 </div>
 
