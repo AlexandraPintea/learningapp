@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireDatabase } from "angularfire2/database";
+import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
-import { Quote } from '../books/card-list/quote.model';
+import { Quote } from '../books/quote-list/quote.model';
 
 @Component({
   selector: 'app-add-quote',
@@ -14,11 +14,11 @@ export class AddQuoteComponent implements OnInit {
   newQuoteId: string;
   quotesFromFirebase: Observable<any[]>;
 
-  constructor(private db:AngularFireDatabase) { 
+  constructor(private db: AngularFireDatabase) {
     this.quotesFromFirebase = db.list('/quotes').valueChanges();
   }
 
-  onQuoteAdded(db:AngularFireDatabase) {
+  onQuoteAdded(db: AngularFireDatabase) {
     const quote = new Quote(this.newQuote, this.newQuoteId);
     this.db.list('/quotes').push(quote);
   }

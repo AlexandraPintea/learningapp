@@ -1,5 +1,5 @@
-import { Component } from "@angular/core"
-import { Input } from "@angular/core";
+import { Component } from '@angular/core'
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { Input } from "@angular/core";
 })
 export class AppComponent {
   title = 'app';
-  name: string = '';
+  name  = '';
   date: string;
 
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { AngularFireDatabase } from "angularfire2/database";
+import { AngularFireDatabase } from 'angularfire2/database';
 import { Book } from '../book.model';
 
 @Component({
@@ -13,15 +13,15 @@ export class AddBookComponent implements OnInit {
   newBookName: string;
   newBookAuthor: string;
   newBookDescription: string;
-  booksFromFirebase: Observable<any[]>; 
+  booksFromFirebase: Observable<any[]>;
 
-  constructor(private db:AngularFireDatabase) { 
+  constructor(private db: AngularFireDatabase) {
     this.booksFromFirebase = db.list('/books').valueChanges();
   }
 
-  onBookAdded(db:AngularFireDatabase) {
+  onBookAdded(db: AngularFireDatabase) {
     const book = new Book(this.newBookAuthor, this.newBookName, this.newBookDescription);
-    this.db.list('/books').push(book)
+    this.db.list('/books').push(book);
   }
   ngOnInit() {
   }

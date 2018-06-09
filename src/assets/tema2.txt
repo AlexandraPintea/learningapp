@@ -1,0 +1,14 @@
+- install intteliJ community edition
+- rename the card-stuff to quote-stuff
+- make a visual tree with components (google docs has a Insert Drawing functionality)
+- restructure folders as to respect the tree structure
+- in comp de add quote sa iti arate id-ul quote-ului selectat
+  - new service, used in add quote/quote list
+  - emit from quote list the id of quote
+  - subscribe in add quote to the event
+  - just display the id
+
+ *
+ add a new field Book = called id
+ - also have an input for id in the book-add component
+
