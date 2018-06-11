@@ -13,6 +13,7 @@ export class AddBookComponent implements OnInit {
   newBookName: string;
   newBookAuthor: string;
   newBookDescription: string;
+  newBookId: string;
   booksFromFirebase: Observable<any[]>;
 
   constructor(private db: AngularFireDatabase) {
@@ -20,7 +21,7 @@ export class AddBookComponent implements OnInit {
   }
 
   onBookAdded(db: AngularFireDatabase) {
-    const book = new Book(this.newBookAuthor, this.newBookName, this.newBookDescription);
+    const book = new Book(this.newBookAuthor, this.newBookName, this.newBookDescription, this.newBookId);
     this.db.list('/books').push(book);
   }
   ngOnInit() {

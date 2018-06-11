@@ -8,7 +8,6 @@ import {environment} from '../environments/environment';
 import { AppComponent } from './app.component';
 import { CardComponent } from './quote/quote.component';
 import { FormsModule } from '@angular/forms';
-import { HomeComponent } from './home/home.component';
 import { BooksComponent } from './books/books.component';
 import { BookListComponent } from './books/book-list/book-list.component';
 import { DateComponent } from './date/date.component';
@@ -21,7 +20,6 @@ import { RandomQuoteComponent } from './random-quote/random-quote.component';
   declarations: [
     AppComponent,
     CardComponent,
-    HomeComponent,
     BooksComponent,
     BookListComponent,
     DateComponent,

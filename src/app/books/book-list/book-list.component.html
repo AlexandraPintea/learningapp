@@ -1,5 +1,5 @@
 <ul class="books-list">
-  <li class="book-name" [title]="book.key" *ngFor='let book of booksFromFirebase | async' (click)='onBookSelected(book.key)'>
+  <li class="book-name" *ngFor='let book of booksFromFirebase | async' [title]="book.key" (click)='onBookSelected(book.key)'>
     <span>{{book.payload.val().name}}</span>
   </li>
 </ul>
