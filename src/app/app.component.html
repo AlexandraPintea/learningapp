@@ -1,12 +1,13 @@
   <div class="container-fluid">
     <div class="main-menu row">
-        <a href="#" class="menu-home">Home</a>
-        <a href="#" class="menu-books">Books</a>
+        <a routerLink="/" routerLinkActive="active-route" [routerLinkActiveOptions]="{exact:true}" class="menu-home">Home</a>
+        <a routerLink="/books" routerLinkActive="active-route" class="menu-books">Books</a>
+        <a routerLink="/dashboard" routerLinkActive="active-route" class="menu-dashboard">Dashboard</a>
     </div>
-    <app-books></app-books>
-  <app-random-quote></app-random-quote>
+ <router-outlet></router-outlet>
 </div>
-
+  <!--active-route clasa din css-->
+<!-- href - face reload la toata aplicatia -->
   <!-- <app-date></app-date> -->
   <!-- <input type="text" [(ngModel)]="name"/>
   <span>{{name}}</span>

@@ -15,6 +15,7 @@ export class AddBookComponent implements OnInit {
   newBookDescription: string;
   newBookId: string;
   booksFromFirebase: Observable<any[]>;
+   book = new Book(this.newBookAuthor, this.newBookName, this.newBookDescription, this.newBookId);
 
   constructor(private db: AngularFireDatabase) {
     this.booksFromFirebase = db.list('/books').valueChanges();

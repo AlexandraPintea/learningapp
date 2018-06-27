@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { AngularFireDatabase } from 'angularfire2/database';
-import { Quote } from '../books/quote-list/quote.model';
+import { Quote } from '../shared/quote.model';
 @Component({
   selector: 'app-random-quote',
   templateUrl: './random-quote.component.html',

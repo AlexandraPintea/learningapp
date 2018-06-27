@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './quote.component.html',
-  styleUrls: ['./quote.component.css']
+  selector: 'app-quote-card',
+  templateUrl: './quote-card.component.html',
+  styleUrls: ['./quote-card.component.css']
 })
-export class CardComponent implements OnInit {
+export class QuoteCardComponent implements OnInit {
   @Input() quoteInput: string;
   @Input() carddate = '';
 

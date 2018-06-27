@@ -1,6 +1,11 @@
 <ul class="books-list">
-  <li class="book-name" *ngFor='let book of booksFromFirebase | async' [title]="book.key" (click)='onBookSelected(book.key)'>
-    <span>{{book.payload.val().name}}</span>
+  <li class="book-name" *ngFor='let bookWithMetaData of booksFromFirebase | async' [title]="bookWithMetaData.key">
+    <span>{{bookWithMetaData.payload.val().description}}</span>
+
+    <span class="pull-right">
+        <button (click)="readMore(bookWithMetaData.payload.val().bookid)" title="Read more...">Read more...</button>
+        <button (click)="onBookSelected(bookWithMetaData.key)" title="Quotes">Quotes</button>
+    </span>
   </li>
 </ul>
 

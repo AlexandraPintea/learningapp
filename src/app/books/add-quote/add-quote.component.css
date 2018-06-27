@@ -1,8 +1,8 @@
 .add-quote-form {
     padding: 10px 30px 10px 20px;
     margin-top: 15px;
-    background: rgb(214, 187, 83);
-    border: 1px solid #d98310;
+    background: rgba(214, 187, 83, 0.2);
+    /*border: 1px solid #d98310;*/
     max-width: 600px;
 }
 .add-quote-row {

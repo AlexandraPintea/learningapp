@@ -12,3 +12,10 @@
  add a new field Book = called id
  - also have an input for id in the book-add component
 
+ 24.06.2018
+
+ - inca un meniu item - authors - sa adaugam si autori in db si componenta - sa aiba autorii id si nume -pe meniul de autori sa afisez toti autorii
+  si o componenta de adaugat autori
+ - cand dau click pe read more la un autor sa ma duca la pagina cu autorul respectiv
+ - in booklist component sa decomentez linia si sa o sterg pe cea de sub sa vad ce se intampla
+

@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>Add a new quote to one of your books</h2>
+  <form class="add-quote-form" #form="ngForm">
+    <div class="add-quote-row form-group">
+      <label for="book-id">Book id:</label>
+      <input type="text" id="book-id" name="book-id" class="form-control" [(ngModel)]="quoteService.selectedBookId" required/>
+      <div class="col-md-5"></div>
+    </div>
+    <div class="add-quote-row form-group">
+      <label for="book-description">Quote:</label>
+      <input type="text" id="book-description" name="book-description" class="form-control" [(ngModel)]="newContent" required/>
+    </div>
+      <button type="button" class="btn btn-warning" (click)='onQuoteAdded()' [disabled]="!quoteService.isBookSelected" >Add new quote</button>
+  </form>
+  <div class="list-of-cards"  *ngFor='let quote of quotesFromFirebase | async'></div>
+</div>

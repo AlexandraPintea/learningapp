@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { AngularFireDatabase, AngularFireAction, DatabaseSnapshot } from 'angularfire2/database';
 import { QuotesService } from '../quotes.service';
-import { Quote } from './quote.model';
+import { Quote } from '../../shared/quote.model';
 
 @Component({
-  selector: 'app-card-list',
+  selector: 'app-quote-list',
   templateUrl: './quote-list.component.html',
   styleUrls: ['./quote-list.component.css']
 })
