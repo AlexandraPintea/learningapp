@@ -1,22 +1,23 @@
 .main-menu {
-    width: 100%;
-    height: 85px;
-    padding: 30px 50px;
-    box-sizing: border-box;
-    background: #1d2731;
+  width: 100%;
+  height: 65px;
+  padding: 23px 50px;
+  box-sizing: border-box;
+  background: #ffffff;
+  margin: 20px 0;
+  text-align: right;
 }
 .active-route {
   font-weight: bold;
   color: aqua;
-  border: 1px solid white;
 }
-
+.content-containter {
+  padding: 0;
+}
 a {
   margin-right: 20px;
 }
-.books-container {
-    padding-left: 0;
-}
+
 .books-container app-add-book {
     text-align: center;
 }

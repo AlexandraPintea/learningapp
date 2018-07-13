@@ -1,10 +1,9 @@
 .card {
-    min-height: 150px;
     width: 400px;
-    box-shadow: 3px 3px 5px #f8b660;
+    box-shadow: 1px 1px 2px #FF383f;
     margin: 27px 30px 20px 90px;
-    background: #0b3c5d;
-    color: white;
+    background: rgba(202, 235, 242, 0.8);
+    color: #6C6B6B;
     padding: 15px;
     box-sizing: border-box;
 }

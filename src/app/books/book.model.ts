@@ -1,13 +1,13 @@
 export class Book {
-   public author: string;
-   private name: string;
-   private description: string;
-   private bookid: string;
+    public author: string;
+    private authorid: string;
+    private description: string;
+    private name: string;
 
-    constructor(author: string, name: string, description: string, bookid: string) {
-        this.author = author;
-        this.name = name;
-        this.description = description;
-        this.bookid = bookid;
+    constructor(author: string, authorid: string, description: string, name: string) {
+      this.author = author;
+      this.authorid = authorid;
+      this.description = description;
+      this.name = name;
     }
 }

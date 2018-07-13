@@ -23,6 +23,7 @@ export class AddQuoteComponent implements OnInit {
     const quote = new Quote(this.newContent, this.quoteService.selectedBookId);
 
     this.db.list('/quotes').push(quote);
+    // form.reset();
   }
   ngOnInit() {
   }

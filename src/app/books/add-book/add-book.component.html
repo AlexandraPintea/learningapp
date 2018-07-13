@@ -1,25 +1,29 @@
 <div class="container add-book-container">
-  <h4>Add a new book to your library</h4>
+  <div class="form-title">
+    <h4>Add a new book by your favorite author</h4>
+    <h5>or add a new author <a routerLink="/authors" routerLinkActive="active-route" class="menu-authors">here</a></h5>
+  </div>
   <form class="add-book-form" #form="ngForm">
     <div class="add-book-row form-group">
       <label for="book-author">Author:</label>
-      <input type="text" class="form-control" id="book-author" name="book-author" [(ngModel)]='newBookAuthor'/>
+      <select id="book-author" name="book-author" class="form-control" [(ngModel)]="selectedAuthor">
+        <option *ngFor="let author of authors" [ngValue]="author">{{author.author}}</option>
+      </select>
+      <!--<input type="text" class="form-control" id="book-author" name="book-author" [(ngModel)]='authorsService.selectedAuthorName'/>-->
       <!--ce se intampla de fapt in inputul de mai sus <input type="text" name="book-author" [ngModel]='newBookAuthor' (ngModelChange)="newBookAuthor = $event"/> -->
     </div>
     <div class="add-book-row form-group">
-      <label for="book-name">Book name:</label>
-      <input type="text" class="form-control" id="book-name" name="book-name" [(ngModel)]='newBookName'/>
-      </div>
-    <div class="add-book-row form-group">
-      <label for="book-description">Description:</label>
-      <input type="text" class="form-control" id="book-description" name="book-description" [(ngModel)]='newBookDescription'/>
+      <!--<label for="book-name">Book name:</label>-->
+      <!--<input type="text" class="form-control" id="book-name" name="book-name" [(ngModel)]='newBookName'/>-->
     </div>
     <div class="add-book-row form-group">
-      <label for="book-id">Book ID:</label>
-      <input type="text" class="form-control" id="book-id" name="book-id" [(ngModel)]='newBookId'/>
+      <!--<label for="book-description">Description:</label>-->
+      <!--<input type="text" class="form-control" id="book-description" name="book-description" [(ngModel)]='newBookDescription'/>-->
     </div>
-    <button type="button" class="btn btn-warning" (click)='onBookAdded()'>Add book</button>
+    <div class="add-book-row form-group">
+      <label for="author-id">Book ID:</label>
+      <input type="text" class="form-control" id="author-id" [(ngModel)]='authorsService.selectedAuthorId'/>
+    </div>
+    <button type="button" class="btn add-book-button" (click)='onBookAdded()'>Add book</button>
   </form>
-  Model: {{ book.author | json }}
-  Angular: {{ form.value | json }}
 </div>

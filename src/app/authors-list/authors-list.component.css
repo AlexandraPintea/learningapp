@@ -1,11 +1,11 @@
-.books-list {
+.authors-list {
   list-style: none;
   margin-top: 0;
   padding: 0;
   width: 100%;
   float: left;
 }
-.book-name {
+.author-name {
   padding: 10px 0 10px 30px;
   border-bottom: 1px solid #DCDBD5;
   background: white;
@@ -15,7 +15,6 @@
   text-transform: capitalize;
   background-size: 100% 100%;
 }
-
 .read-more {
   margin-right: 20px;
   background: none;

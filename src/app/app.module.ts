@@ -7,7 +7,7 @@ import {environment} from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { QuoteCardComponent } from './shared/quote-card/quote-card.component';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BooksComponent } from './books/books.component';
 import { BookListComponent } from './books/book-list/book-list.component';
 import { CardListComponent } from './books/quote-list/quote-list.component';
@@ -17,12 +17,20 @@ import { RandomQuoteComponent } from './random-quote/random-quote.component';
 import {RouterModule, Routes} from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BookDetailComponent } from './books/book-detail/book-detail.component';
+import { HomeComponent } from './home/home.component';
+import { AuthorsListComponent } from './authors-list/authors-list.component';
+import { AddAuthorComponent } from './authors-list/add-author/add-author.component';
+import { AuthorDetailsComponent } from './authors-list/author-details/author-details.component';
+import { RegistrationComponent } from './register/registration/registration.component';
 
 const appRoutes: Routes = [
-  {path: '', component: BooksComponent},
+  {path: '', component: HomeComponent},
   {path: 'books', component: BooksComponent},
   {path: 'book/:id', component: BookDetailComponent},
   {path: 'dashboard', component: DashboardComponent},
+  {path: 'authors', component: AuthorsListComponent},
+  {path: 'authors/:id', component: AuthorDetailsComponent},
+  {path: 'registration', component: RegistrationComponent}
 ];
 
 @NgModule({
@@ -36,7 +44,12 @@ const appRoutes: Routes = [
     AddQuoteComponent,
     RandomQuoteComponent,
     DashboardComponent,
-    BookDetailComponent
+    BookDetailComponent,
+    HomeComponent,
+    AuthorsListComponent,
+    AddAuthorComponent,
+    AuthorDetailsComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +57,8 @@ const appRoutes: Routes = [
     CommonModule,
     AngularFireModule.initializeApp(environment.firebase, 'learningapp-dbb59'),
     AngularFireDatabaseModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
-<div>
-  <p>Today's quote</p>
-  <p>{{radonQuote}}</p>
+<div class="random-quote">
+  <h3 class="random-quote-title">Today's quote</h3>
+  <p class="random-quote-content" *ngFor="let randomQuote of quotesFromFirebase| async">{{randomQuote.payload.val()}}</p>
 </div>
 

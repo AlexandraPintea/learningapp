@@ -1,9 +1,12 @@
-  <div class="container-fluid">
+  <div class="container-fluid content-container">
     <div class="main-menu row">
         <a routerLink="/" routerLinkActive="active-route" [routerLinkActiveOptions]="{exact:true}" class="menu-home">Home</a>
         <a routerLink="/books" routerLinkActive="active-route" class="menu-books">Books</a>
         <a routerLink="/dashboard" routerLinkActive="active-route" class="menu-dashboard">Dashboard</a>
+        <a routerLink="/authors" routerLinkActive="active-route" class="menu-authors">Authors</a>
+      <a routerLink="/registration" routerLinkActive="active-route" class="menu-register">Register</a>
     </div>
+
  <router-outlet></router-outlet>
 </div>
   <!--active-route clasa din css-->

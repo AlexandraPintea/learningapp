@@ -1,17 +1,18 @@
-.card {
-    min-height: 150px;
-    width: 400px;
-    box-shadow: 3px 3px 5px #f8b660;
-    margin: 27px 30px 20px 90px;
-    background: #0b3c5d;
-    color: white;
-    padding: 15px;
-    box-sizing: border-box;
+.random-quote {
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
-.card-book-title {
-    padding-bottom: 3px;
-    border-bottom: 2px solid #fca533;
+.random-quote-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  margin: 40px auto;
 }
-.carddate-input {
-    color: black;
+.random-quote-content {
+  padding: 5px 20px;
+  background: #CAEBF2;
+  color: #6C6B6B;
+  display: inline-block;
+  margin-bottom: 70px;
 }

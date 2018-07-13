@@ -1,10 +1,22 @@
 .add-book-container {
-  width: 100%;
+  width: 80%;
+  margin-top: 50px;
+}
+.form-title {
+  overflow: auto;
+}
+.add-book-container h4 {
+  color: #6C6B6B;
+  float: left;
+}
+
+.add-book-container h5 {
+  float: right;
+  color: #6C6B6B;
 }
 .add-book-form {
     padding: 10px 10px 15px 15px;
-    background:rgba(214, 187, 83, 0.2);
-    /*border: 1px solid #d98310;*/
+    background:rgba(202, 235, 242, 0.8);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -13,7 +25,9 @@
 }
 .add-book-form input {
     margin-bottom: 20px;
-    border: 1px solid #d98310;
+}
+.add-book-form label {
+  color: #FA5E64;
 }
 .add-book-row {
     text-align: left;
@@ -23,7 +37,7 @@
     border: none;
     padding: 4px;
     text-transform: capitalize;
-    color: #1d2731;
+    color: white;
     font-size: 14px;
-    background: #FD9E22;
+    background: #FF383f;
 }

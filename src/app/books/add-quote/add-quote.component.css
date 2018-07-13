@@ -1,9 +1,16 @@
+.add-quote-container {
+  overflow: auto;
+}
+h4,
+label {
+  color: #6C6B6B;
+}
 .add-quote-form {
     padding: 10px 30px 10px 20px;
     margin-top: 15px;
-    background: rgba(214, 187, 83, 0.2);
-    /*border: 1px solid #d98310;*/
+  background:rgba(202, 235, 242, 0.8);
     max-width: 600px;
+  clear: both;
 }
 .add-quote-row {
     margin-bottom: 15px;
@@ -14,10 +21,8 @@
     border: none;
     padding: 4px;
     text-transform: capitalize;
-    color: #1d2731;
+    color: white;
     font-size: 14px;
-    background: #FD9E22;
+    background: #FF383f;
 }
-.add-quote-form input {
-    border: 1px solid #d98310;
-}
+

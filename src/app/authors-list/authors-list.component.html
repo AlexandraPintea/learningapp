@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="authors-container col-md-3">
+    <ul class="authors-list">
+      <li class="author-name" *ngFor="let author of authorsFromFirebase | async">
+        <p>{{author.payload.val().author}}</p>
+        <div class="pull-right">
+          <button class="btn read-more" (click)="readMore(author.payload.val())" title="Read more...">See author's details</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <app-add-author class="col-md-9"></app-add-author>
+</div>
+
+

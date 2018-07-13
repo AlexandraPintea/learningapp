@@ -1,0 +1,15 @@
+<div class="add-author-container">
+  <h4>Add a new author</h4>
+  <form class="add-author-form" #form="ngForm">
+    <div class="add-author-row form-group" [class.has-error]="authorName.invalid && authorName.touched">
+      <label for="author-name" class="control-label">Author's name</label>
+      <input #authorName="ngModel" type="text" id="author-name" name="author-name" class="form-control" [(ngModel)]="newAuthorName" required/>
+      <div *ngIf="authorName.invalid && authorName.touched" class="alert alert-danger">Author's name is required</div>
+    </div>
+    <div class="add-author-row form-group">
+      <label for="author-id">Author id</label>
+      <input type="text" id="author-id" name="author-id" class="form-control" [(ngModel)]="newAuthorid" required/>
+    </div>
+    <button type="button" class="btn add-author-button" (click)='onAuthorAdded()'>Add new author</button>
+  </form>
+</div>

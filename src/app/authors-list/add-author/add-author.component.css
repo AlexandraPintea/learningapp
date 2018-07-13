@@ -1,0 +1,28 @@
+.add-author-container {
+  overflow: auto;
+}
+h4,
+label {
+  color: #6C6B6B;
+}
+.add-author-form {
+  padding: 10px 30px 10px 20px;
+  margin-top: 15px;
+  background:rgba(202, 235, 242, 0.8);
+  max-width: 600px;
+  clear: both;
+}
+.add-author-row {
+  margin-bottom: 15px;
+}
+.add-author-button {
+  margin-left: 24%;
+  width: 180px;
+  border: none;
+  padding: 4px;
+  text-transform: capitalize;
+  color: white;
+  font-size: 14px;
+  background: #FF383f;
+}
+
